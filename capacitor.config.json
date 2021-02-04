@@ -1,0 +1,13 @@
+{
+  "appId": "com.jc.twitterclone",
+  "appName": "twitter-clone",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
