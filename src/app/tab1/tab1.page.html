@@ -1,11 +1,12 @@
-<ion-header>
+<ion-header #header>
   <ion-toolbar>
-    <ion-buttons>
-      <ion-button>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <!-- <ion-button>
         <ion-icon slot="icon-only" name="menu"></ion-icon>
-      </ion-button>
+      </ion-button> -->
     </ion-buttons>
-    <ion-title>
+    <ion-title class="ion-text-center">
       <ion-icon name="logo-twitter" color="primary"></ion-icon>
     </ion-title>
     <ion-buttons slot="end">
@@ -16,7 +17,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true" scrollEvents="true" [appHideHeader]="header">
   <ion-slides [options]='slideOptions'>
     <ion-slide *ngFor="let tweet of tweets">
       <ion-avatar>
@@ -28,12 +29,10 @@
   <app-tweet *ngFor='let tweet of tweets' [tweet]='tweet'></app-tweet>
 
 
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" [@rotateFab]='dataService.state'>
     <ion-fab-button>
       <ion-icon name="pencil"></ion-icon>
     </ion-fab-button>
   </ion-fab>
-
-
 
 </ion-content>

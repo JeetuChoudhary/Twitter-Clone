@@ -5,6 +5,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class DataService {
+  state: string = 'rotated';
+  shouldRotate = false;
+
   constructor(private http: HttpClient) {}
 
   getTweets() {

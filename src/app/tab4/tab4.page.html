@@ -1,15 +1,34 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-buttons>
+    <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      Tab 4
+      Messages
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="settings"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <p>something here </p>
+  <div class="container ion-text-center">
+    <p #heading>
+      Send a message, get a message
+    </p>
+    <p class="ion-margin-horizontal ion-padding-horizontal">
+      Direct Messages are private conversation between you and other people on Twitter. Share Tweets, media and more!
+    </p>
+    <ion-button size="small">Write a Message</ion-button>
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" [@rotateFab]='dataService.state'>
+    <ion-fab-button>
+      <ion-icon name="mail"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
 </ion-content>
