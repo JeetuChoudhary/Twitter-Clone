@@ -2,24 +2,39 @@
 //     --color: var(--ion-color-primary);
 //   }
 
-ion-toolbar,
+// ion-toolbar,
 ion-header {
-    --min-height: 150px;
+    --min-height: 155px;
 }
 ion-title {
     padding: 0;
-    // margin: 0;
     align-items: baseline;
 }
-.user-title {
-    font-size: 1.3rem;
-    span{
-        font-size: 0.8rem;
-        display: block;
+.user-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 25px;
+
+    p {
+        font-size: 1.3rem;
+        span{
+            font-size: 0.8rem;
+            display: block;
+        }
     }
 }
 
-ion-button {
-    --padding-end: 15px;
-    --padding-top: 24px;
+.follow-info {
+    display: flex;
+    padding-bottom: 15px;
+
+    span {
+        margin-right: 15px;
+    }
+}
+
+.divider {
+    --min-height: 5px;
+    // --border-width: 0 0 0.55px;
 }

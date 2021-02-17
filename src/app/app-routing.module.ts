@@ -22,6 +22,14 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/topics/topics.module').then((m) => m.TopicsPageModule),
   },
+  {
+    path: 'bookmarks',
+    loadChildren: () => import('./pages/bookmarks/bookmarks.module').then( m => m.BookmarksPageModule)
+  },
+  {
+    path: 'moments',
+    loadChildren: () => import('./pages/moments/moments.module').then( m => m.MomentsPageModule)
+  },
 ];
 @NgModule({
   imports: [

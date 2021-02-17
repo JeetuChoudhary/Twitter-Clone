@@ -11,21 +11,32 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 })
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
+  openAccount = false;
   public appPages = [
     {
       title: 'Profile',
       url: '/profile',
-      icon: 'home',
+      icon: 'person',
     },
     {
       title: 'Lists',
       url: '/lists',
-      icon: 'mail',
+      icon: 'reader',
     },
     {
       title: 'Topics',
       url: '/topics',
-      icon: 'mail',
+      icon: 'chatbubble-ellipses',
+    },
+    {
+      title: 'Bookmarks',
+      url: '/bookmarks',
+      icon: 'bookmark',
+    },
+    {
+      title: 'Moments',
+      url: '/moments',
+      icon: 'flash',
     },
   ];
 
