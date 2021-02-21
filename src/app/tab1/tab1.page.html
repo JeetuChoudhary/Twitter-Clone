@@ -1,14 +1,14 @@
 <ion-header #header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-menu-button color="primary"></ion-menu-button>
     </ion-buttons>
     <ion-title class="ion-text-center">
       <ion-icon name="logo-twitter" color="primary"></ion-icon>
     </ion-title>
     <ion-buttons slot="end">
       <ion-button>
-        <ion-icon slot="icon-only" name="pulse-outline"></ion-icon>
+        <ion-icon slot="icon-only" name="pulse-outline" color="primary"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -19,9 +19,9 @@
     <ion-slide>
       <ion-avatar>
         <img src="../../assets/images/my_profile.jpg">
-          <ion-badge>
-            <ion-icon name="add"></ion-icon>
-          </ion-badge>
+        <ion-badge>
+          <ion-icon name="add"></ion-icon>
+        </ion-badge>
       </ion-avatar>
     </ion-slide>
     <ion-slide *ngFor="let tweet of tweets">

@@ -1,6 +1,6 @@
 {
   "appId": "com.jc.twitterclone",
-  "appName": "twitter-clone",
+  "appName": "TwitterClone",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",

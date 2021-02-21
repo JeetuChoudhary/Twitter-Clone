@@ -15,7 +15,8 @@
             </p>
             <ion-buttons (click)="openAccount = !openAccount" class="ion-align-selft-start">
               <ion-button>
-                <ion-icon [name]="!openAccount ? 'chevron-down-outline' : 'chevron-up-outline'"></ion-icon>
+                <ion-icon [name]="!openAccount ? 'chevron-down-outline' : 'chevron-up-outline'" color="primary">
+                </ion-icon>
               </ion-button>
             </ion-buttons>
           </div>
@@ -55,12 +56,12 @@
         <ion-toolbar>
           <ion-buttons slot='start'>
             <ion-button>
-              <ion-icon name="sunny-outline"></ion-icon>
+              <ion-icon name="sunny-outline" color="primary"></ion-icon>
             </ion-button>
           </ion-buttons>
           <ion-buttons slot="end">
             <ion-button>
-              <ion-icon name="qr-code-outline"></ion-icon>
+              <ion-icon name="qr-code-outline" color="primary"></ion-icon>
             </ion-button>
           </ion-buttons>
         </ion-toolbar>
